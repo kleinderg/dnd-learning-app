@@ -2,7 +2,7 @@ exports.myCharacter = function(req, res) {
     res.render('my-character')
 }
 
-exports.listSpells = async function(req, res) {
-    listOfSpells = await Spell.getSpellsList()
+exports.listSpells = function(req, res) {
+    listOfSpells = Spell.getSpellsList()
     res.console.table(listOfSpells)
 }

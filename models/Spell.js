@@ -5,7 +5,7 @@ let Spell = function(data) {
     this.errors = []
 }
 
-Spell.getSpellsList = async () => {
+Spell.getSpellsList = () => {
     axios.get(dndSpells).then(data => {
         return data
     }).catch(error => {

@@ -5,5 +5,6 @@ const charController = require('./controllers/charController')
 
 // character related routes
 router.get('/', charController.myCharacter)
+router.get('/find-spells', charController.listSpells)
 
 module.exports = router

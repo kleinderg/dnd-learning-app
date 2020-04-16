@@ -1,13 +1,17 @@
-// see if spell exists with "index"
-// create a new Spell from findSpellBySpellIndex w/ spellName = 'findSpellBySpellIndex--result.name'
-// display that spell in the charController
+const dndSpells = "www.dnd5eapi.co/api/spells/"
 
-Char.findSpellBySpellIndex = function(spellIndex) {
-    return new Promise(function(resolve, reject) {
-        if (typeof(spellIndex) != "string") {
-            reject()
-            return
-        }
-    }).then().catch()
+let Spell = function(data) {
+    this.data = data
+    this.errors = []
 }
 
+Spell.getSpellsList = async () => {
+    axios.get(dndSpells).then(data => {
+        return data
+    }).catch(error => {
+        this.errors.push("Error retrieving spells list.")
+        return(error)
+    })
+}
+
+module.exports = Spell

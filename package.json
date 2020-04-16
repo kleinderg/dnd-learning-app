@@ -1,0 +1,17 @@
+{
+  "name": "dndapp",
+  "version": "1.0.0",
+  "description": "A learning app for learning about promises and working with an API",
+  "main": "app.js",
+  "scripts": {
+    "watch": "nodemon app --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pandabeards",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.3"
+  }
+}

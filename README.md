@@ -1,4 +1,4 @@
-## Project Info
+# Project Info
 Project for learning more about working with APIs and promises.
 
 ### Currently

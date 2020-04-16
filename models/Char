@@ -1,0 +1,8 @@
+Char.findSpellBySpellIndex = function(spellIndex) {
+    return new Promise(function(resolve, reject) {
+        if (typeof(spellIndex) != "string") {
+            reject()
+            return
+        }
+    }).then().catch()
+}

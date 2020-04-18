@@ -1,4 +1,5 @@
 const dndSpells = "www.dnd5eapi.co/api/spells/"
+const axios = require('axios')
 
 let Spell = function(data) {
     this.data = data
